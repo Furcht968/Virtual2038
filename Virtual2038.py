@@ -61,7 +61,7 @@ while(1):
 	screen.blit(ovr, (90,270))
 
 	pygame.display.update()
-	for event in pygame.event.get(): # 終了処理
+	for event in pygame.event.get():
 		if event.type == QUIT:
 			pygame.quit()
 			sys.exit()
