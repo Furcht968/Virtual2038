@@ -10,7 +10,7 @@ exe = Executable(script = "Virtual2038.py", base= base)
 
 setup(
     name = 'Virtual2038',
-    version = '1.0 GA', 
+    version = '1.1 GA', 
     description = 'RealTime 32bit UNIX Time viewer.',
     executables = [exe]
 )
