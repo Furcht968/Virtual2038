@@ -14,7 +14,7 @@ if  __name__ == "Virtual2038":
 
 if __name__ == "__main__":
 	if len(sys.argv)==1:
-		bit=32
+		bit=31
 	else:
 		bit=int(sys.argv[1])
 	if len(sys.argv)<=2:
