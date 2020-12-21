@@ -1,3 +1,18 @@
+#*****************************************
+#
+# Virtual2038 - Virtual 2038 Problem Python Software
+# 
+#
+# Copyright (c) 2020 Furcht968
+# Released under the MIT license
+# Lisence/LICENSE.txt
+# Lisence/LICENSE.jp.txt
+#
+#
+#*****************************************
+
+
+
 import time
 from datetime import datetime
 import sys
