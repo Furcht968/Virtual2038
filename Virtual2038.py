@@ -5,8 +5,8 @@
 #
 # Copyright (c) 2020 Furcht968
 # Released under the MIT license
-# Lisence/LICENSE.txt
-# Lisence/LICENSE.jp.txt
+# https://github.com/Furcht968/Virtual2038/blob/master/License/LICENSE.txt
+# https://github.com/Furcht968/Virtual2038/blob/master/License/LICENSE_jp.txt
 #
 #
 #*****************************************
