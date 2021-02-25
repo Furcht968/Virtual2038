@@ -1,19 +1,12 @@
-import sys,os,shutil
-from cx_Freeze import setup, Executable
+import subprocess
+import shutil
+import os
 
-base = None
-
-if sys.platform == "win32" : base = "Win32GUI"
-# CUIの場合はこのif文をコメントアウトしてください。
-
-exe = Executable(script = "Virtual2038.py", base= base, icon="icon.ico")
-
-setup(
-    name = 'Virtual2038',
-    version = '2.1 GA', 
-    description = 'RealTime 32bit UNIX Time viewer.',
-    executables = [exe]
-)
-
-
-shutil.copy("./icon.png", "build/" + os.listdir("./build/")[0]+"/")
+subprocess.run("python3 -m PyInstaller --noconsole --onefile --icon=icon.ico --version-file meta_file/VersionInfoFile.txt Virtual2038.py", shell=True)
+subprocess.run("python3 -m PyInstaller --noconsole --onefile --icon=icon.ico --version-file meta_file/VersionInfoFile_Config.txt Virtual2038_Config.py", shell=True)
+if(os.path.exists("./dist/icons/") == True):
+    shutil.rmtree("./dist/icons/")
+shutil.copytree("./icons/", "./dist/icons/")
+if(os.path.isfile("./dist/config.json") == True):
+    os.remove("./dist/config.json")
+shutil.copy("./config.json", "./dist/")

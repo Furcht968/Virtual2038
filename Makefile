@@ -1,13 +1,13 @@
 Build:
 	python3 -m pip install pygame
-	python3 -m pip install cx_Freeze
-	python3 setup.py build
+	python3 -m pip install pyinstaller
+	python3 setup.py
 
 
 InstallPackage:
 	python3 -m pip install pygame
-	python3 -m pip install cx_Freeze
+	python3 -m pip install pyinstaller
 
 BuildRun:
-	python3 setup.py build
+	python3 setup.py
 
